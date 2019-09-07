@@ -1,0 +1,421 @@
+/*Базовые цвета*/
+
+@btn-color: #fcb303;
+@icons-color: #46b814;
+@text-colors: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #dddddd; 
+
+
+@font-face {
+	font-family: 'ProximaNova_rg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+	url('../fonts/ProximaNova-Regular.woff') format('woff'),
+	url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+	url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: '../fonts/ProximaNova_bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+	url('../fonts/ProximaNova-Bold.woff') format('woff'),
+	url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+	url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.rg(){
+	font-family: 'ProximaNova_rg', sans-serif;
+}
+
+.bold(){
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+
+/*Базовые настройки*/
+
+html{
+	font-size: 10px;
+}
+body{
+	font-family: 'ProximaNova_rg', sans-serif;
+}
+section{
+	padding: 10rem 0;
+}
+a:hover{
+	text-decoration: none;
+}
+button:focus, input:focus, a:focus, textarea:focus{
+	outline: none;
+}
+.section-header{
+	margin: 2rem 0 10rem;
+	font-family: 'ProximaNova_rg', sans-serif;
+	text-align: center;
+}
+.section-header h2{
+	font-size: 3rem;
+	font-weight: 900;
+}
+.section-header p{
+	font-size: 1.2rem;
+}
+.section-header-light{
+	color: #fff;
+}
+/* Кнопка */
+.button{
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: #fcb303;
+	color: #fff;	
+	text-transform: uppercase;
+	border: none;
+	transition: all 0.2s;
+}
+/*При наведении на кнопку*/
+.button:hover{
+	cursor: pointer;
+	background-color: #A47401;
+}
+
+/*.main*/
+.main{
+	padding: 2rem 0 5rem;
+	background: #fff url(../img/bg.png) center center no-repeat;
+	background-size: cover;
+}
+.main.header{
+	height: 6rem;
+}
+/*Логотип*/
+.main .logo img{
+	width: 60%;
+}
+/*Номер-ссылка*/
+.main .header .phone-block{
+	text-align: right;
+}
+.main a.phone-link{
+	display: inline-block;
+	font-family: 'ProximaNova_bold', sans-serif;
+	font-weight: 900;
+	color: #1a1820;
+	font-size: 1.5rem;
+	height: 6rem;
+	line-height: 6rem;
+}
+.main .wrap{
+	display: table;
+	width: 100%;
+	height: 6rem;
+}
+.main .wrap-block{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+/*.main-content*/
+.main .main-content{
+	margin-top: 10rem;
+}
+/*Главный заголовок*/
+.main .main-content h1{
+	margin-bottom: 2.5rem;
+	font-family: 'ProximaNova_bold', sans-serif;
+	font-weight: 900;
+	font-size: 3.3rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+}
+/*Подзаголовок*/
+.main .main-content p.main-subtitle{
+	margin-bottom: 2.5rem;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+}
+/*Зеленый ярлык*/
+.main .main-content span{
+	margin-bottom: 2.5rem;
+	display: inline-block;
+	padding: 2.5rem 4.8rem;
+	font-family: 'ProximaNova_rg', sans-serif;
+	font-size: 1.6rem;
+	background-color: #46b814;
+	color: #fff;
+	text-align: center;
+}
+/*Цифра 300*/
+.main .main-content span strong{
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+/*Оплата по факту*/
+.main-trigger{
+	display: block;
+	margin-top: 1.5rem;
+	font-family: 'ProximaNova_bold', sans-serif;
+	font-weight: 900;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+}
+/*Главная форма*/
+.main-form{
+	padding: 3rem 4rem;
+	background-color: #fff;
+	text-align: center;
+}
+/*Заголовок формы*/
+.main-form .main-form-header{
+	margin-bottom: 4rem;
+	font-family: 'ProximaNova_rg', sans-serif;
+	font-size: 1.8rem;
+}
+.main-form .main-form-header strong{
+	font-size: 1.9rem;
+	font-weight: 900;
+}
+/*Поле для ввода*/
+.main-form .main-form-input{
+	display: block;
+	margin: 2rem 0;
+	width: 100%;
+	padding: 1.5rem;
+	border: 1px solid #dddddd;
+}
+/*Подписи к полям*/
+.main-form label{
+	position: absolute;
+	padding: 0.5rem;	
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 1.3rem;
+	background-color: #fff;
+}
+/* Оформление кнопки*/
+.main-form .main-form-btn.button{
+	display: block;
+	height: 5.5rem;
+	width: 100%;
+	font-size: 1.6rem;
+}
+/*Подпись под кнопкой*/
+.main-form small{
+	display: block;
+	margin-top: 1.5rem;
+}
+
+/*Секция с преимуществами*/
+.features-block{
+	text-align: center;
+}
+.features-block .features-img{
+	height: 8rem;
+	margin-bottom: 2rem;
+}
+.features-block .features-img img{
+	display: block;
+	margin: 0 auto;
+}
+.features-block h3{
+	margin-bottom: 3rem;
+	font-family: 'ProximaNova_rg', sans-serif;
+	font-weight: 900;
+	font-size: 2rem;
+}
+.features-block p{
+	display: inline-block;
+	width: 90%;
+	font-size: 1.2rem;
+}
+.slick-active{
+	outline: none;
+}
+/*Кнопки для слайдера*/
+.prevArrow{
+	position: absolute;
+	z-index: 99;
+	height: 2rem;
+	width: 2rem;
+	border: none;
+	background: url('../img/arrow_left.png') center no-repeat;
+	background-size: 70%;
+	top: 50%;
+	left: -3%;
+	transform: scaleY(-50%);
+}
+.nextArrow{
+	position: absolute;
+	z-index: 99;
+	height: 2rem;
+	width: 2rem;
+	border: none;
+	background: url('../img/arrow_right.png') center no-repeat;
+	background-size: 70%;
+	top: 50%;
+	right: -3%;
+	transform: scaleY(-50%);
+}
+
+/*Секция с ценами*/
+section.price{
+	background: #46b814 url(../img/prices/prices-bg.png) center;
+}
+.price-button{
+	text-align: right;
+}
+.price-header-btn{
+	margin-top: 2.5rem;
+}
+.price-block{
+	min-height: 50rem;
+	padding: 1rem 3rem 4rem;
+	background-color: #fff;
+	box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+	text-align: center;
+}
+.price-block h4.price-title{
+	margin: 3rem 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.price-block img{
+	display: inline-block;
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 30rem;
+}
+.price-block .price-tag{
+	display: block;
+	margin-bottom: 2rem;
+	font-size: 1.7rem;
+	font-weight: 900;
+}
+.price-block .price-list{
+	padding: 0;
+	list-style: none;
+	min-height: 15rem;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+}
+.price-block .price-list li:before{
+	content: '';
+	display: inline-block;
+	margin-right: 0.5rem;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../img/checked.png) no-repeat center;
+	vertical-align: middle;
+}
+/* Всплывающие окна */
+/*Оставьте заявку*/
+.popup-form{
+	padding: 0;
+	margin-top: 3rem;
+}
+.popup{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgb(0, 0, 0, 0.5);
+}
+.popup .popup-content{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+	padding: 4rem 6rem;
+	background-color: #fff;
+}
+.popup .popup-close{
+	position: absolute;
+	top: -1.5rem;
+	right: -2.4rem;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+	font-size: 3rem;
+	color: #fff;
+}
+.popup .popup-content h4{
+	font-weight: bould;
+}
+/*Адаптация*/
+@media(max-width: 991px){
+	/*main*/
+	.main{
+		background-position: top right;
+	}
+	.main .logo img{
+		width: 90%;
+	}
+	.main .header .phone-block {
+		text-align: center;
+	}
+	.main .main-content h1 {
+		margin-top: 1rem;
+	}
+	.main-title {
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+	/*price*/
+
+	.price-button{
+		text-align: center;
+		padding: 2rem 0;
+	}
+	.price .section-header-light{
+		margin-bottom: 0;
+	}
+	.price .price-header-btn{
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+	.price-block{
+		margin-top: 2rem;
+	}
+
+	/*Схема работы*/
+	section.scheme .sheme-block{
+		min-height: 30rem;
+	}
+  div.scheme-block h4.scheme-title{
+		font-size: 4rem;
+		font-weight: bold;
+}
+	@media(max-width: 577px){
+		/*main*/
+		.main{
+			background-position: top left;
+		}
+		.main .logo img{
+			width: 30%;
+		}
+		main.main{
+			text-align: center;
+		}
+		.main .wrap-block{
+			text-align: center;
+		}
+	}
